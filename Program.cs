@@ -12,7 +12,19 @@ namespace VariablesCS
             Console.WriteLine(numberOfCupsOfCoffee + " " + fullName + " " + today);
             Console.WriteLine("What is your name?");
             var userName = Console.ReadLine();
-            Console.WriteLine($"Greetings {userName}!");
+            if(userName == "Bane")
+            {
+                Console.WriteLine("You're a big guy.");
+            }
+            if(userName == "CIA")
+            {
+                Console.WriteLine("I'M CRASHING THIS PROGRAM WITH NO SURVIVORS");
+                return;
+            }
+            else
+            {
+                Console.WriteLine($"Greetings {userName}!");   
+            }
             Console.WriteLine("Can you give me two numbers? Please press Enter after the first Number");
             var firstNumberAsString = Console.ReadLine();
             var secondNumberAsString = Console.ReadLine();
