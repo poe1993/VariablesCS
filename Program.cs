@@ -12,10 +12,6 @@ namespace VariablesCS
             Console.WriteLine(numberOfCupsOfCoffee + " " + fullName + " " + today);
             Console.WriteLine("What is your name?");
             var userName = Console.ReadLine();
-            if(userName == "Bane")
-            {
-                Console.WriteLine("You're a big guy.");
-            }
             if(userName == "CIA")
             {
                 Console.WriteLine("I'M CRASHING THIS PROGRAM WITH NO SURVIVORS");
@@ -24,6 +20,10 @@ namespace VariablesCS
             else
             {
                 Console.WriteLine($"Greetings {userName}!");   
+            }
+            if(userName == "Bane")
+            {
+                Console.WriteLine("You're a big guy.");
             }
             Console.WriteLine("Can you give me two numbers? Please press Enter after the first Number");
             var firstNumberAsString = Console.ReadLine();
