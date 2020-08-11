@@ -25,22 +25,23 @@ namespace VariablesCS
             {
                 Console.WriteLine("You're a big guy.");
             }
-            Console.WriteLine("Can you give me two numbers? Please press Enter after the first Number");
+            Console.WriteLine("What's your favorite number?");
             var firstNumberAsString = Console.ReadLine();
+            Console.WriteLine("What's your second favorite number?");
             var secondNumberAsString = Console.ReadLine();
             var firstOperand = double.Parse(firstNumberAsString);
             var secondOperand = double.Parse(secondNumberAsString);
             Console.WriteLine(firstOperand + " " + secondOperand);
             var sum = (firstOperand + secondOperand);
-            Console.WriteLine($"Your sum is {sum}");
+            Console.WriteLine($"Your sum is {firstOperand} + {secondOperand} = {sum} ");
             var difference = (firstOperand - secondOperand);
-            Console.WriteLine($"Your difference is {difference}");
+            Console.WriteLine($"Your difference is {firstOperand} - {secondOperand} = {difference} ");
             var product = (firstOperand * secondOperand);
-            Console.WriteLine($"Your product is {product}");
+            Console.WriteLine($"Your product is {firstOperand} * {secondOperand} = {product}");
             var quotient = (firstOperand / secondOperand);
-            Console.WriteLine($"Your quotient is {quotient}");
+            Console.WriteLine($"Your quotient is {firstOperand} / {secondOperand} = {quotient}");
             var remainder = (firstOperand % secondOperand);
-            Console.WriteLine($"Your remainder is {remainder}");
+            Console.WriteLine($"Your remainder is {firstOperand} % {secondOperand} = {remainder}");
 
 
 
